@@ -49,9 +49,4 @@ blockquote {
     flex-direction: column;
     margin: 0 1rem 1rem;
   }
-
-  a:focus .img,
-  a:hover .img {
-    opacity: 0;
-  }
   
