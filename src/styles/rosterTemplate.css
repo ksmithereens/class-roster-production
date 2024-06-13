@@ -3,6 +3,9 @@
 body {
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Satoshi', sans-serif;
+    color: black;
+    background: black;
   }
   
   figure {
@@ -36,13 +39,19 @@ blockquote {
   .card {
     width: clamp(30ch, calc(1 / 4 * 100%), 100%);
     min-width: 30ch;
-    border: 0.5rem solid black;
+    border: 0.5rem solid white;
     border-radius: 1rem;
+    background: white;
   }
   
   .card figcaption {
     display: flex;
     flex-direction: column;
     margin: 0 1rem 1rem;
+  }
+
+  a:focus .img,
+  a:hover .img {
+    opacity: 0;
   }
   

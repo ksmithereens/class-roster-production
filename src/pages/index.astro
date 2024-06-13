@@ -32,9 +32,9 @@ const records = await getRecords('Roster');
 		{records.map(record => (
 
 		<figure class="card"
-				style={`border-color:${record.fields.color}`}>
-	  
-	  		<img src={record.fields.urlimage}/>
+				style={`background:${record.fields.color}`}>
+			
+			<img src={record.fields.urlimage}/>
 
 		  <blockquote>
 			{record.fields.quote}
@@ -44,7 +44,7 @@ const records = await getRecords('Roster');
 	  
 			<h1>{record.fields.name}</h1>
 	  
-			<p class="emoji">This emjoi best desribes me: <span>{record.fields.emoji}</span></p>
+			<p class="emoji">This emoji best describes me: <span>{record.fields.emoji}</span></p>
 			<p class="weird">How am I weird? <span>{record.fields.weird}</span></p>
 			<p class="superpower">My superpower is: <span>{record.fields.superpower}</span></p>
 			<p class="karaoke">My karaoke jam is: <span>{record.fields.karaoke}</span></p>
